@@ -1,0 +1,197 @@
+:root {
+  --pink: #fa7952d7;
+  --black: #00026b;
+  --light-color: #666;
+  --box-radow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --outline: .1rem solid rgba(0, 0, 0, .1);
+  --outline-hover: .2rem solid var(--black);
+}
+
+* {
+  font-family: "Century Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.title {
+  color: #fa7952d7;
+  font-size: 30px;
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+html {
+  font-size: 110%;
+  overflow-x: hidden;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+body {
+  background: #eee;
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+div.slds-box {
+  background: linear-gradient(45deg, var(--pink), transparent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#aboutBtn a,
+#tagsBtn a,
+#countriesBtn a,
+#difficultyBtn a,
+#categoriesBtn a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.bloc {
+  width: 250px;
+  height: 275px;
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+.icons {
+  
+  line-height: 3rem;
+  border: 3px solid white;
+  border-radius: .5rem;
+  background: #eee;
+  color: var(--black);
+  margin-right: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slds-notification-badge {
+  line-height: 1.5rem;
+}
+
+.icons:hover {
+  background-color: var(--pink);
+}
+
+.icons:hover svg {
+  fill: #FFFFFF !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 0%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+.navbar .slds-radio_button {
+  white-space: nowrap !important;
+}
+
+.slds-radio_button:hover {
+  position: relative;
+  color: white;
+  background-color: var(--pink);
+}
+
+.slds-radio_button .slds-dropdown li {
+  display: block;
+}
+
+.slds-radio_button ul.dropdown {
+  width: 100%;
+}
+
+.search-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 25rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.search-form.active {
+  right: 2rem;
+  transition: .4s linear;
+}
+
+.search-form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+  /*font-family: "Century Gothic", sans-serif;*/
+}
+
+.search-form label {
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.search-form label:hover {
+  color: var(--pink);
+}
+
+
+.model-body {
+  font-size: 20px;
+}
+
+.confirmButton {
+  border: solid #fa795275 2px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background: linear-gradient(45deg, #fa7952d7, transparent);
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.all {
+  position: absolute;
+  top: 25%;
+  right: 34%;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  /* background:linear-gradient(45deg, #fa7952d7  , transparent); */
+  background: #eee;
+  text-align: center;
+  display: none;
+  color: #00026b;
+}
+
+.nosearch {
+  font-size: 30px;
+  color: var(--pink);
+  text-align: center;
+  padding-top: 30px;
+}
