@@ -11,7 +11,7 @@ A social recipe-sharing web app where users can post recipes, follow other cooks
 - Admin view of all users
 
 ## Tech
-PHP · MySQL · HTML · CSS · JavaScript (jQuery)
+PHP · MySQL · HTML · CSS · JavaScript 
 
 ## Run locally
 1. Install XAMPP (or any PHP + MySQL server)
